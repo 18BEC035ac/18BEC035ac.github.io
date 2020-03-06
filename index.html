@@ -171,7 +171,7 @@
             var vout_gain = "Vout="+vout+" (V)";
             if(Math.abs(vout)>vcc)
                 document.getElementById('result2').innerHTML='Conclusion : Here |Vout|>Vcc, hence the op-amp is saturated.';
-            else if(vcc>Math.abs(vout))
+            else if(vcc>=Math.abs(vout))
                 document.getElementById('result2').innerHTML='Conclusion : Here Vcc>|Vout|, hence the op-amp is in linear region.';
             else
                 document.getElementById('result2').innerHTML='';
